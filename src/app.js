@@ -69,7 +69,7 @@ io.on("connection", (socket) => {
     })
 })
 server.listen(PORT, () => {
-    console.log("Yine de şahlanıyor aman from ", PORT)
+    console.log(`Listening on http://localhost:${PORT}`)
 })
 
 
