@@ -1,0 +1,40 @@
+{
+  "name": "socketio-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe but with multiplayer!",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js -e js,html,css"
+  },
+  "keywords": [
+    "Tic",
+    "Tac",
+    "Toe",
+    "Game",
+    "Ebubekir",
+    "Hilmi",
+    "Dağ",
+    "SocketIO",
+    "socket",
+    "io",
+    "Multiplayer",
+    "Browser",
+    "Game",
+    "Javascript",
+    "js"
+  ],
+  "author": "Ebubekir Hilmi Dağ",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ehilmidag/socketio-tic-tac-toe.git"
+  }
+}
