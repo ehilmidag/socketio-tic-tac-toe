@@ -42,18 +42,18 @@ socket.on("gameFinished", (gameFinishedResponse) => {
     })
     if (gameFinishedResponse.win === "x") {
         if (joinSuccessObj.whichUser === 0) {
-            winningTextMessageTextElement.innerText = `KAZANDIN KEKE`
+            winningTextMessageTextElement.innerText = `KAZANDIN`
         } else {
-            winningTextMessageTextElement.innerText = `KAYBETTİN KEKE`
+            winningTextMessageTextElement.innerText = `KAYBETTİN`
         }
     } else if (gameFinishedResponse.win === "circle") {
         if (joinSuccessObj.whichUser === 0) {
-            winningTextMessageTextElement.innerText = `KAYBETTİN KEKE`
+            winningTextMessageTextElement.innerText = `KAYBETTİN`
         } else {
-            winningTextMessageTextElement.innerText = `KAZANDIN KEKE`
+            winningTextMessageTextElement.innerText = `KAZANDIN`
         }
     } else {
-        winningTextMessageTextElement.innerText = `BERABERE KEKELER`
+        winningTextMessageTextElement.innerText = `BERABERE`
     }
 
     winningMessageElement.classList.add('show')
@@ -82,7 +82,7 @@ socket.on("otherPlayerPlacedMark", obj => {
 
 socket.on("playerLeft", (a) => {
     if (!gameFinished) {
-        alert("Adamı öldü aq")
+        alert("Rakip Çıktı")
         location.replace("/")
     }
 })
